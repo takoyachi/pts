@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa; /* Warna latar belakang lebih cerah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Agar padding tidak membuat elemen melebihi ukuran */
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px; /* Lebar maksimal diperbesar sedikit */
+    text-align: center;
+    border: 2px solid #00bcd4; /* Border warna cerah */
+}
+
+h1 {
+    color: #00796b; /* Warna judul yang lebih kalem */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.question {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    text-align: left;
+    color: #333333;
+    background-color: #e0f2f7; /* Latar belakang untuk pertanyaan */
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00bcd4; /* Garis samping sebagai penanda */
+}
+
+.choices {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: grid; /* Menggunakan Grid untuk tata letak pilihan */
+    grid-template-columns: 1fr 1fr; /* Dua kolom */
+    gap: 15px; /* Jarak antar pilihan */
+}
+
+.choice-item {
+    background-color: #f8fcfd; /* Latar belakang pilihan */
+    border: 1px solid #b2ebf2;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex; /* Untuk menata radio button dan teks */
+    align-items: center;
+    text-align: left;
+    color: #444444;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.choice-item:hover {
+    background-color: #e4f4f7;
+    border-color: #00bcd4;
+    transform: translateY(-2px); /* Efek melayang saat hover */
+}
+
+input[type="radio"] {
+    margin-right: 12px;
+    transform: scale(1.3); /* Memperbesar radio button */
+    accent-color: #00bcd4; /* Warna radio button */
+}
+
+#submit {
+    background-color: #00bcd4; /* Warna tombol yang cerah */
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+}
+
+#submit:hover {
+    background-color: #0097a7; /* Warna lebih gelap saat hover */
+    transform: translateY(-2px);
+}
+
+.result {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #28a745; /* Warna hijau untuk skor benar */
+    background-color: #e8f5e9;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #28a745;
+    display: inline-block; /* Agar latar belakang sesuai konten */
+}
