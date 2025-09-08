@@ -570,7 +570,10 @@ function showResults() {
         }
     });
 
-    resultContainer.innerHTML = `Skor kamu: ${numCorrect} dari ${questions.length} 🎉`;
+    // ... kode di dalam fungsi showResults() lainnya ...
+
+let finalScore = numCorrect * 2;
+resultContainer.innerHTML = `Skor kamu: ${finalScore} dari 100 🎉`;
 }
 
 buildQuiz();
